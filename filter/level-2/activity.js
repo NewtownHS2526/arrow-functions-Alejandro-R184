@@ -33,10 +33,12 @@ const exercise1Array = [
 
 // Your solution here (one-line arrow function):
 // const exercise1Result1 = 
-
+const arrow1 = exercise1Array.filter(item => item.age > 17);
 // Your solution here (regular arrow function):
 // const exercise1Result2 = 
-
+const arrow2 = exercise1Array.filter((item) => {
+  return item.age > 17;
+});
 // Uncomment to test:
 // console.log("Exercise 1 - One-line:", exercise1Result1);
 // console.log("Exercise 1 - Regular:", exercise1Result2);
@@ -57,10 +59,12 @@ const exercise2Array = [5, -3, 10, -8, 15, -1, 20];
 
 // Your solution here (one-line arrow function):
 // const exercise2Result1 = 
-
+const arrow3 = exercise2Array.filter(num => num > 0);
 // Your solution here (regular arrow function):
 // const exercise2Result2 = 
-
+const arrow4 = exercise2Array.filter((num) => {
+  return  num > 0;
+});
 // Uncomment to test:
 // console.log("Exercise 2 - One-line:", exercise2Result1);
 // console.log("Exercise 2 - Regular:", exercise2Result2);
@@ -82,10 +86,12 @@ const exercise3Array = ["javascript", "python", "java", "c++", "html", "css"];
 
 // Your solution here (one-line arrow function):
 // const exercise3Result1 = 
-
+const arrow5 = exercise3Array.filter(item => item.length > 4);
 // Your solution here (regular arrow function):
 // const exercise3Result2 = 
-
+const arrow6 = exercise3Array.filter((item) => {
+  return item.length > 4;
+});
 // Uncomment to test:
 // console.log("Exercise 3 - One-line:", exercise3Result1);
 // console.log("Exercise 3 - Regular:", exercise3Result2);
@@ -106,10 +112,12 @@ const exercise4Array = [12, 45, 8, 23, 56, 9, 34, 67];
 
 // Your solution here (one-line arrow function):
 // const exercise4Result1 = 
-
+const arrow7 = exercise4Array.filter(num => num < 51 && num > 19); 
 // Your solution here (regular arrow function):
 // const exercise4Result2 = 
-
+const arrow8 = exercise4Array.filter((num) => {
+  return num > 19 && num < 51;
+});
 // Uncomment to test:
 // console.log("Exercise 4 - One-line:", exercise4Result1);
 // console.log("Exercise 4 - Regular:", exercise4Result2);
@@ -133,10 +141,12 @@ const exercise5Array = ["apple", "banana", "cherry", "date", "elderberry"];
 
 // Your solution here (one-line arrow function):
 // const exercise5Result1 = 
-
+const arrow9 = exercise5Array.filter(fruit => fruit.includes("a"));
 // Your solution here (regular arrow function):
 // const exercise5Result2 = 
-
+const arrow10 = exercise5Array.filter((fruit) => {
+  return fruit.includes("a");
+});
 // Uncomment to test:
 // console.log("Exercise 5 - One-line:", exercise5Result1);
 // console.log("Exercise 5 - Regular:", exercise5Result2);

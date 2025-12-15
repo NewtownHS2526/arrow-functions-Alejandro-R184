@@ -115,12 +115,12 @@ Write your solution using:
 - One-line arrow function
 - Regular arrow function
 */
-
+let num = 0
 const exercise1Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
 // exercise1Array.forEach(
-
+exercise1Array.forEach(num1 => console.log(num1*2));
 // Your solution here (regular arrow function):
 // exercise1Array.forEach((
 
