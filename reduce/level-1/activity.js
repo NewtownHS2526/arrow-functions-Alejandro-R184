@@ -84,7 +84,7 @@ EXAMPLE 3: Concatenating Strings
 const words = ["Hello", "World", "JavaScript"];
 
 // One-line arrow function
-const sentence1 = words.reduce((acc, word) => acc + " " + word, "");
+const sentence1 = words.reduce((acc, word) => acc + " " + word, " ");
 console.log("Example 3 - One-line:", sentence1.trim()); // "Hello World JavaScript"
 
 // Regular arrow function
@@ -112,10 +112,12 @@ const exercise1Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
 // const exercise1Result1 = 
-
+const arrow1 = exercise1Array.reduce((a , b) => a + b);
 // Your solution here (regular arrow function):
 // const exercise1Result2 = 
-
+const arrow2 = exercise1Array.reduce((a,b) => {
+  return a + b;
+});
 // Uncomment to test:
 // console.log("Exercise 1 - One-line:", exercise1Result1);
 // console.log("Exercise 1 - Regular:", exercise1Result2);
@@ -136,10 +138,12 @@ const exercise2Array = [10, 20, 30, 40];
 
 // Your solution here (one-line arrow function):
 // const exercise2Result1 = 
-
+const arrow3 = exercise2Array.reduce((a,b) => a*b);
 // Your solution here (regular arrow function):
 // const exercise2Result2 = 
-
+const arrow4 = exercise2Array.reduce((a,b) => {
+  return a*b;
+});
 // Uncomment to test:
 // console.log("Exercise 2 - One-line:", exercise2Result1);
 // console.log("Exercise 2 - Regular:", exercise2Result2);
@@ -160,10 +164,12 @@ const exercise3Array = ["apple", "banana", "orange"];
 
 // Your solution here (one-line arrow function):
 // const exercise3Result1 = 
-
+const arrow5 = exercise3Array.reduce((a,b) => a + "," + b + "" );
 // Your solution here (regular arrow function):
 // const exercise3Result2 = 
-
+const arrow6 = exercise3Array.reduce((a,b) => {
+  return a + "," + b ;
+});
 // Uncomment to test:
 // console.log("Exercise 3 - One-line:", exercise3Result1);
 // console.log("Exercise 3 - Regular:", exercise3Result2);
@@ -183,10 +189,12 @@ const exercise4Array = [5, 15, 25, 35];
 
 // Your solution here (one-line arrow function):
 // const exercise4Result1 = 
-
+const arrow7 = exercise4Array.reduce((a,b) => b > a ? b : a);
 // Your solution here (regular arrow function):
 // const exercise4Result2 = 
-
+const arrow8 = exercise4Array.reduce((a,b) => {
+  return b > a ? b : a;
+});
 // Uncomment to test:
 // console.log("Exercise 4 - One-line:", exercise4Result1);
 // console.log("Exercise 4 - Regular:", exercise4Result2);
